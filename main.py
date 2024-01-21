@@ -39,7 +39,7 @@ else:
 diff_percent = abs((difference / float(yesterday_closing_price)) * 100)
 print(f"{diff_percent}%")
 
-if diff_percent > 0.001:
+if diff_percent > 4:
     news_params = {
         "apikey": NEWS_API_KEY,
         "qInTitle": COMPANY_NAME,
